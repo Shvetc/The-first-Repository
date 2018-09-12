@@ -1,8 +1,8 @@
 #include <iostream>
 #include <stdio.h>
 using namespace std;
-
-bool isUpper(const char* p1, const char* p2)
+//necessary to add comments
+bool isUpper(const char* p1, const char* p2)  
 {
 int i=0;
 while(p1[i]==p2[i] && p1[i] != '\0')
@@ -15,7 +15,7 @@ else
 return false;
 }
 
-void bubleSort(const char** P, int n)
+void bubleSort(const char** P, int n) 
 {
 for(int i=0;i<n;i++)
 for(int j=0;j<n-i-1;j++)
@@ -32,10 +32,10 @@ P[j+1] = tmp;
 int main()
 {
 const char** P = new const char*[4];
-P[0] = "naa";
-P[1] = "lbasdasd";
-P[2] = "mcaw";
-P[3] = "k";
+P[0] = "laa";
+P[1] = "kbasdasd";
+P[2] = "scaw";
+P[3] = "m";
 bubleSort(P,4);
 for(int i=0; i < 4; i++)
 cout<< P[i]<< endl;
